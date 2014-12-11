@@ -11,18 +11,19 @@
 # 11106
 # 
 
-# Function:
+# Function: (taking the assignment a bit further!)
 #	1 - Ask a digit
 #	2 - Ask how many time it should be added (2--> a + aa / 4--> a + aa + aaa + aaaa)
 
+# Ask the user a digit, and how many times it should be repeated then added to the other repetitions
 
 def conv(digit, repeats):
         start = range(1,repeats+1)
         sequence = []
         count = 0
-        for p in start:
+        for p in start: # Create a list of integers of the digit repeated p times 
                 sequence.append(int(str(digit) * p))
-        for p in sequence:
+        for p in sequence: # Add the resulting values
                count = count + p
         return count
 
